@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soumyadip Maity | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    :root {
+      --bg-light: #f4f4f4;
+      --bg-dark: #1e1e1e;
+      --text-light: #333;
+      --text-dark: #f4f4f4;
+      --accent: #3498db;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background: var(--bg-light);
+      color: var(--text-light);
+      transition: background 0.3s, color 0.3s;
+    }
+    header, footer {
+      background: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 2rem 0;
+    }
+    section {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+      background: white;
+      margin-bottom: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    h1, h2 { color: #2c3e50; }
+    ul { padding-left: 1.5rem; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .dark-mode {
+      background: var(--bg-dark);
+      color: var(--text-dark);
+    }
+    .dark-mode section {
+      background: #2c2c2c;
+      color: var(--text-dark);
+    }
+    .toggle-btn {
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: var(--accent);
+      color: white;
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      z-index: 1000;
+    }
+    .profile-pic {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <button class="toggle-btn" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+
+  <header>
+    <img src="profile.jpg" alt="Soumyadip Maity" class="profile-pic">
+    <h1>Soumyadip Maity</h1>
+    <p>Aspiring Data Analyst | MBA in Business Analytics & Data Science</p>
+  </header>
+
+  <section>
+    <h2>About Me</h2>
+    <p>I am currently pursuing an MBA in Business Analytics & Data Science from Bengal Institute of Business Studies. I bring hands-on experience in data analysis, visualization, and automation from internships at Prime Infoserv LLP and Skipper Limited. I am passionate about turning data into insights and optimizing business decisions through analytics.</p>
+  </section>
+
+  <section>
+    <h2>Skills</h2>
+    <ul>
+      <li>Python, SQL, R</li>
+      <li>Power BI, Tableau</li>
+      <li>MS Excel, MS PowerPoint</li>
+      <li>Data Analysis, Statistical Modeling, ETL Processes</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Projects</h2>
+    <ul>
+      <li><strong>Predict Selling Car Price</strong>: Built a Random Forest model to predict prices based on features like age and mileage.</li>
+      <li><strong>Stock Price Prediction</strong>: Created an LSTM-based model to forecast stock trends.</li>
+      <li><strong>Vehicle Fuel Consumption</strong>: Designed algorithms to optimize fuel efficiency and reduce costs.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Experience</h2>
+    <p><strong>Prime Infoserv LLP</strong> (Aug 2024 - Nov 2024) – Intern Analyst - R&D<br>
+    Automated data tasks, built dashboards, and enhanced decision-making accuracy by 30%.</p>
+
+    <p><strong>Skipper Limited</strong> (Nov 2023 – Jan 2024) – Engineer (QA)<br>
+    Reduced defect rates and implemented Six Sigma strategies to improve quality and cut costs.</p>
+  </section>
+
+  <section>
+    <h2>Education</h2>
+    <p><strong>MBA – Business Analytics & Data Science</strong><br>Bengal Institute of Business Studies, 2023–Present</p>
+    <p><strong>B.Tech – Mechanical Engineering</strong><br>Institute of Science and Technology, 2019–2022</p>
+  </section>
+
+  <section>
+    <h2>Certifications</h2>
+    <ul>
+      <li>Data Analysis with Python</li>
+      <li>Advanced Excel with Tableau – IIT Kanpur</li>
+      <li>Machine Learning – IIT Kanpur</li>
+      <li>Certified Lean Six Sigma AI Yellow Belt</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:smmaitysm@gmail.com">smmaitysm@gmail.com</a></p>
+    <p>Portfolio: <a href="https://www.datascienceportfol.io/smmaitysm" target="_blank">datascienceportfol.io/smmaitysm</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/soumyadip-maity-mechanical-engineering-in-kolkata" target="_blank">linkedin.com/in/soumyadip</a></p>
+    <p>GitHub: <a href="https://github.com/sdm1999" target="_blank">github.com/sdm1999</a></p>
+    <p><a href="soumyadip maity BA.pdf" download>Download My Resume (PDF)</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Soumyadip Maity | Portfolio</p>
+  </footer>
+
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark-mode');
+    }
+  </script>
+</body>
+</html>
